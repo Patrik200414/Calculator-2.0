@@ -42,3 +42,11 @@ body{
     word-wrap: break-word;/*Add to my own calculator*/
     word-break: break-all;/*Add to my own calculator*/
 }
+.output .previous-operand{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
