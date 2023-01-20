@@ -65,7 +65,7 @@ class Calculator{
         const integerDigits = parseFloat(stringNumber.split('.')[0]);
         const decimalDigits = stringNumber.split('.')[1];
         let integerDisplay;
-        if(isNan(integerDigits)){
+        if(isNaN(integerDigits)){
             integerDisplay = '';
         }
         else{
@@ -85,6 +85,9 @@ class Calculator{
         if(this.operation != null){
             this.previousOperandandTextElement.innerText = 
             `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
+        }
+        else{
+            this.previousOperandandTextElement.innerText = '';
         }
         
     }
